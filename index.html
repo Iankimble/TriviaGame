@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body class="body">
+<div class="trivia"> NBA Trivia Game</div>
+<div id="clock"> clock </div>
+
+<!--<body onload="game()">-->
+
+<!--    <button id="start"> Click Here To Start Game</button>-->
+<!-- <div id="questionBx"> </div>-->
+<!--<button id="options1"> </button>-->
+
+
+
+<div id="game">
+    <br>
+    <form id="op1">
+
+        <div id="quest1"> "What team has won the most NBA championships?"</div>
+
+
+        <input type="radio" name="q1" value="" id="a" value="false" onclick="wrong()"> 76ers <br>
+        <input type="radio" name="q1" value="" id="b" value="false" onclick="wrong()"> Chicago Bulls <br>
+        <input type="radio" name="q1" value="" id="c" value="true" onclick="answer()"> Boston Celtics <br>
+        <input type="radio" name="q1" value="" id="d" value="false" onclick="wrong()"> Los Angeles Lakers <br>
+        <br>
+    </form>
+
+    <form id="op2">
+        <div id="quest2"> "In what year did Allen Iverson win the NBA MVP award?"</div>
+
+        <input type="radio" name="q2" value="" id="a" value="false" onclick="wrong()"> 1993 <br>
+        <input type="radio" name="q2" value="" id="b" value="false" onclick="wrong()"> 1995 <br>
+        <input type="radio" name="q2" value="" id="c" value="true" onclick="answer()"> 2001 <br>
+        <input type="radio" name="q2" value="" id="d" value="false" onclick="wrong()"> 2003 <br>
+        <br>
+
+    </form>
+    <form id="op3">
+        <div id=" quest3"> "How many NBA championships have the Philadelphia 76ers won?"</div>
+
+        <input type="radio" name="q2" value="" id="a" value="false" onclick="wrong()"> 2 <br>
+        <input type="radio" name="q2" value="" id="b" value="true" onclick="answer()"> 3 <br>
+        <input type="radio" name="q2" value="" id="c" value="false" onclick="wrong()"> 5 <br>
+        <input type="radio" name="q2" value="" id="d" value="false" onclick="wrong()"> 0 <br>
+    </form>
+<br>
+    <form id="op4">
+        <div id=" quest4"> "How many NBA championships has LeBron James Won?</div>
+
+        <input type="radio" name="q2" value="" id="a" value="false" onclick="wrong()"> 2 <br>
+        <input type="radio" name="q2" value="" id="b" value="true" onclick="wrong()"> 0 <br>
+        <input type="radio" name="q2" value="" id="c" value="false" onclick="wrong()"> 10 <br>
+        <input type="radio" name="q2" value="" id="d" value="true" onclick="answer()"> 3<br>
+    </form>
+<br>
+    <form id="op5">
+        <div id=" quest5"> "How many all star appearances has Tim Duncan Had?"</div>
+
+        <input type="radio" name="q2" value="" id="a" value="false" onclick="wrong()"> 3 <br>
+        <input type="radio" name="q2" value="" id="b" value="true" onclick="wrong()"> 20 <br>
+        <input type="radio" name="q2" value="" id="c" value="false" onclick="wrong()"> 13<br>
+        <input type="radio" name="q2" value="" id="d" value="true" onclick="answer()"> 15<br>
+    </form>
+<br>
+    <form id="op6">
+        <div id=" quest6">"Which player has won the most NBA finals MVP award?"</div>
+
+        <input type="radio" name="q2" value="" id="a" value="true" onclick="answer()"> Michael Jordan <br>
+        <input type="radio" name="q2" value="" id="b" value="false" onclick="wrong()"> Shaquille O'Neil <br>
+        <input type="radio" name="q2" value="" id="c" value="false" onclick="wrong()"> Karem Abdul- Jabbar <br>
+        <input type="radio" name="q2" value="" id="d" value="false" onclick="wrong()"> Bill Russell <br>
+    </form>
+<br>
+    <form id="op7">
+        <div id=" quest7"> "Which player has the most NBA All Star appearances as of 2017-2018 season?"</div>
+
+        <input type="radio" name="q2" value="" id="a" value="false" onclick="wrong()"> Kobe Bryant<br>
+        <input type="radio" name="q2" value="" id="b" value="false" onclick="wrong()"> Michael Jordan <br>
+        <input type="radio" name="q2" value="" id="c" value="false" onclick="wrong()"> LeBron James <br>
+        <input type="radio" name="q2" value="" id="d" value="true" onclick="answer()"> Karem Abdul- Jabbar <br>
+    </form>
+<br>
+    <form id="op8">
+        <div id=" quest8">  "Who was the NBA rookie of The Year for the 2013-2014 season?"</div>
+
+        <input type="radio" name="q2" value="" id="a" value="false" onclick="wrong()"> Damian Lillard <br>
+        <input type="radio" name="q2" value="" id="b" value="true" onclick="answer()"> Michael Carter- Williams <br>
+        <input type="radio" name="q2" value="" id="c" value="false" onclick="wrong()"> Tyreke Evans <br>
+        <input type="radio" name="q2" value="" id="d" value="false" onclick="wrong()"> Brandon Roy <br>
+    </form>
+<br>
+    <form id="op9">
+        <div id=" quest9"> "As of 2018, what is the name of the Philadelphia 76ers Developmental team?"</div>
+
+        <input type="radio" name="q2" value="" id="a" value="false" onclick="wrong()"> Delaware 87ers <br>
+        <input type="radio" name="q2" value="" id="b" value="false" onclick="wrong()"> Frankford Flash <br>
+        <input type="radio" name="q2" value="" id="c" value="true" onclick="answer()"> Delaware Blue Coats <br>
+        <input type="radio" name="q2" value="" id="d" value="false" onclick="wrong()"> Scranton Spirit <br>
+    </form>
+<br>
+    <form id="op10">
+        <div id=" quest10"> "Which WNBA Team has won the most titles as of 2018?"</div>
+
+        <input type="radio" name="q2" value="" id="a" value="true" onclick="answer()"> Houston Comets<br>
+        <input type="radio" name="q2" value="" id="b" value="false" onclick="wrong()"> Minnesota Lynx <br>
+        <input type="radio" name="q2" value="" id="c" value="false" onclick="wrong()"> New York Liberty <br>
+        <input type="radio" name="q2" value="" id="d" value="false" onclick="wrong()"> Los Angeles Sparks <br>
+    </form>
+
+    <button id="submit" onclick="results()"> submit </button>
+
+
+    <div id="finalAnswers"></div>
+</div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
